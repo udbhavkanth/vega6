@@ -1,0 +1,91 @@
+.add-caption-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+
+.canvas-container {
+  border: 2px solid #ccc;
+  margin-bottom: 1rem;
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem; /* add spacing before the layers container */
+}
+
+/* Stylish Buttons within the controls */
+.controls button {
+  border: none;
+  border-radius: 4px;
+  background-color: #6c63ff; /* A soft purple shade */
+  color: #ffffff;
+  font-size: 1rem;
+  padding: 0.5rem 1.25rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.controls button:hover {
+  background-color: #574eff;
+  transform: translateY(-2px);
+}
+
+.controls button:focus {
+  outline: 2px solid #b3a6ff;
+  outline-offset: 2px;
+}
+
+.controls button:active {
+  transform: translateY(0);
+}
+
+/* 
+  Container for layers log
+  - Light background
+  - Some padding
+  - A border, and optional rounding
+  - Let it expand with content, or set a max-height
+*/
+.layer-logs {
+  width: 90%; /* or 100%, or a fixed px if you prefer */
+  background-color: #f7f7f7;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+
+  /* If you want it scrollable beyond a certain height, uncomment:
+  max-height: 300px;
+  overflow-y: auto;
+  */
+}
+
+/* style the heading slightly */
+.layer-logs h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+/* remove default list style and add spacing */
+.layer-logs ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.layer-logs li {
+  margin-bottom: 1rem; /* space between log entries */
+}
+
+/* optionally style the JSON log to stand out */
+.layer-logs pre {
+  background: #fff;
+  border: 1px solid #eee;
+  padding: 0.5rem;
+  border-radius: 4px;
+}

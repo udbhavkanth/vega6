@@ -1,0 +1,64 @@
+.home-page {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  /* Positioning logic for the search bar */
+  .search-container.center {
+    margin-top: 40vh; /* center-ish for demonstration */
+    display: flex;
+    justify-content: center;
+    transition: margin-top 0.3s ease;
+  }
+  
+  .search-container.top {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    transition: margin-top 0.3s ease;
+  }
+  
+  /* Pagination controls styles */
+  .pagination-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    gap: 1rem;
+  }
+  
+  .pagination-controls button {
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+  }
+  
+  .pagination-controls span {
+    font-weight: 500;
+  }
+  
+  .user-info {
+    /* A nice, modern sans-serif font */
+    font-family: 'Open Sans', Arial, sans-serif;
+  
+    /* Light vertical spacing around this section */
+    margin: 1rem 0;
+    text-align: left; /* center the text, optional */
+  }
+  
+  .user-info p {
+    margin: 0.25rem 0; /* slight space between lines */
+    font-size: 1.1rem; /* slightly larger than default */
+    color: #333;       /* dark gray text, easy on the eyes */
+    line-height: 1.4;  /* comfortable line height */
+  }
+  
+  .user-info p:nth-child(1) {
+    font-weight: 600;  /* bold the first line (e.g. name) */
+  }
+  
+  .user-info p:nth-child(2) {
+    color: #555;       /* lighter text for the email */
+    font-style: italic; /* italic to differentiate */
+  }
+  
